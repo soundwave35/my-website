@@ -9,29 +9,13 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-      <h1>TO DO LIST</h1>
-      
-      <form id="new-task-form" >
-        <input
-            type="text" 
-            id="new-task-input"
-            placeholder="What is Your Plan?" />
+    <div id="app"></div>
 
-        <input 
-          type="submit"
-          id="new-task-submit"
-          value="Add task"/>
-      </form>
-    </header>
-
-    <main>
-      <section class="task-list">
-        <h2>Tasks</h2>
-        <div id="tasks"></div>
-      </section>
-    </main>
+    <script type="module">
+      import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+      import home from './home.js'
     
-    <script src="main.js"></script>
+      createApp(home).mount('#app')
+    </script>
   </body>
 </html>
