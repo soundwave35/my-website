@@ -27,7 +27,7 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-} 
+}
 
 header h1 {
   font-size: 2.5rem;
@@ -81,78 +81,77 @@ input, button {
 }
 
 main {
-	flex: 1 1 0%;
-	max-width: 800px;
-	width: 100%;
-	margin: 0 auto;
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .task-list {
-	padding: 1rem;
+  padding: 1rem;
 }
 
 .task-list h2 {
-	font-size: 1.5rem;
-	font-weight: 300;
-	color: var(--gray);
-	margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 1rem;
 }
 
 #tasks .task {
-	display: flex;
-	justify-content: space-between;
-	background-color: var(--darkest);
-	padding: 1rem;
-	border-radius: 1rem;
-	margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .task .content {
-	flex: 1 1 0%;
+  flex: 1 1 0%;
 }
 
 .task .content .text {
-	color: var(--light);
-	font-size: 1.125rem;
-	width: 100%;
-	display: block;
-	transition: 0.4s;
+  color: var(--light);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
 }
 
 .task .content .text:not(:read-only) {
-	color: var(--pink);
+  color: var(--pink);
 }
 
 .task .actions {
-	display: flex;
-	margin: 0 -0.5rem;
+  display: flex;
+  margin: 0 -0.5rem;
 }
 
 .task .actions button {
-	cursor: pointer;
-	margin: 0 0.5rem;
-	font-size: 1.125rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	transition: 0.4s;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
 }
 
 .task .actions button:hover {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
 .task .actions button:active {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
-.task .actions .edit {
-	background-image: linear-gradient(to right, var(--pink), var(--purple));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.task .actions .edit,
+.task .actions .save {
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
-	color: crimson;
+  color: crimson;
 }
-
-
